@@ -49,5 +49,9 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "aplicativo visible", Toast.LENGTH_SHORT).show()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this, "App destruida", Toast.LENGTH_SHORT).show()
+    }
 
 } 
